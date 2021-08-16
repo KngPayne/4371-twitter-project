@@ -28,14 +28,14 @@ TCP_PORT = 9001
 #    return text
 
 def processTweet(tweet):
-    # Here, you should implement:
+    # Here, are the implementations:
     # (i) Sentiment analysis,
     # (ii) Get data corresponding to place where the tweet was generate (using geopy or googlemaps)
     # (iii) Index the data using Elastic Search
 
     # Elastic search initialization
-    cloud_id = '4371-Project:ZWFzdHVzMi5henVyZS5lbGFzdGljLWNsb3VkLmNvbTo5MjQzJDlhZDk2NTcxZWFiMjQ0OTU5NDVmMzJlOTIyYjRmYjBlJDkxMmYxMTZmMDg4MDQ3NmE5MDcwMDVkYTkzZDAwNzAx'
-    es = Elasticsearch(cloud_id=cloud_id, http_auth=('elastic', 'vrjToaJjSHLZZU6yTI519QpC'))
+    cloud_id = 'insert kibana key here'
+    es = Elasticsearch(cloud_id=cloud_id, http_auth=('elastic', 'elastic search id'))
 
     tweetData = tweet.split("::")
 
