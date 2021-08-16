@@ -3,10 +3,10 @@ import socket
 import re
 
 # Enter your Twitter keys here!!!
-ACCESS_TOKEN = "1387165894200135682-k5Rfa7HmEwsUb55JXFPpDbFFfamqAm"
-ACCESS_SECRET = "tKR4O906JYojOvhtWsGf5SaGkMH4j62wrh1tebS9kwhBj"
-CONSUMER_KEY = "t1dTRVrQgJHAQcMjHZ8wrQxs8"
-CONSUMER_SECRET = "Vdw4eLaW6f6Qm38CJLpE5g1xqoR7x5LMpjsFk3QPWFfitF6ypI"
+ACCESS_TOKEN = ""
+ACCESS_SECRET = ""
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
 
 # API authentication
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -15,8 +15,10 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 # create wrapper
 api = tweepy.API(auth)
 
+#hashtag used to pull data
 hashtag = "#palestine"
 
+#file name to store data for viewing
 filename = "TweetScrapper.csv"
 
 # stream location
