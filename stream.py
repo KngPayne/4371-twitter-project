@@ -18,9 +18,6 @@ api = tweepy.API(auth)
 #hashtag used to pull data
 hashtag = "#palestine"
 
-#file name to store data for viewing
-filename = "TweetScrapper.csv"
-
 # stream location
 TCP_IP = 'localhost'
 TCP_PORT = 9001
